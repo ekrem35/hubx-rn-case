@@ -6,7 +6,8 @@
     "baseUrl": "./app",
     "paths": {
       "components/*": ["components/*"],
-      "assets/*": ["assets/*"]
+      "assets/*": ["assets/*"],
+      "screens/*": ["screens/*"]
     }
   }
 }
