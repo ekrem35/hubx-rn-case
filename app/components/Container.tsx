@@ -3,7 +3,7 @@ import React from 'react';
 import {StyleProp, StyleSheet, TextStyle, View} from 'react-native';
 
 type ContainerProps = {
-  children: JSX.Element;
+  children: React.ReactNode;
   style?: StyleProp<TextStyle>;
 };
 
