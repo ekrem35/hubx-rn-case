@@ -19,6 +19,8 @@ type ContainerProps = {
   children?: React.ReactNode;
   style?: StyleProp<ViewStyle>;
   contentStyle?: StyleProp<ViewStyle>;
+  scrollContainerStyle?: StyleProp<ViewStyle>;
+  disableScroll?: boolean;
 };
 
 export default function Container(props: ContainerProps) {
@@ -58,7 +60,11 @@ export default function Container(props: ContainerProps) {
         style={[defaultContainerStyle.containerBg, getBgTransformStyles()]}
       />
       <ScrollView
-        contentContainerStyle={defaultContainerStyle.containerScroll}
+        scrollEnabled={props.disableScroll !== true}
+        contentContainerStyle={[
+          defaultContainerStyle.containerScroll,
+          props.scrollContainerStyle,
+        ]}
         style={[defaultContainerStyle.content, props.contentStyle]}>
         <View style={[defaultContainerStyle.childrenArea, props.style]}>
           {props?.children ?? null}
