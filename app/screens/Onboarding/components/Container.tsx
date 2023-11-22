@@ -16,7 +16,7 @@ import ContainerBgSVG from '../assets/container.bg.svg';
 import shadowImage from '../assets/shadow.png';
 
 type ContainerProps = {
-  children: React.ReactNode;
+  children?: React.ReactNode;
   style?: StyleProp<ViewStyle>;
   contentStyle?: StyleProp<ViewStyle>;
 };
@@ -57,9 +57,9 @@ export default function Container(props: ContainerProps) {
       <ContainerBgSVG
         style={[defaultContainerStyle.containerBg, getBgTransformStyles()]}
       />
-      <ScrollView style={[defaultContainerStyle.content, props.style]}>
-        <View style={[defaultContainerStyle.childrenArea, props.contentStyle]}>
-          {props.children}
+      <ScrollView style={[defaultContainerStyle.content, props.contentStyle]}>
+        <View style={[defaultContainerStyle.childrenArea, props.style]}>
+          {props?.children ?? null}
         </View>
       </ScrollView>
 

@@ -12,6 +12,10 @@ import {it} from '@jest/globals';
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
+import {cleanup} from '@testing-library/react-native';
+
+afterEach(cleanup);
+
 it('renders correctly', () => {
   renderer.create(<App />);
 });
