@@ -7,6 +7,7 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 const Stack = createNativeStackNavigator();
 
 import WelcomeScreen from '../screens/Onboarding/Welcome';
+import UserGuide from '../screens/Onboarding/UserGuide';
 
 export default function TabNavigator() {
   return (
@@ -16,6 +17,7 @@ export default function TabNavigator() {
           headerShown: false,
         }}>
         <Stack.Screen name="WelcomeScreen" component={WelcomeScreen} />
+        <Stack.Screen name="UserGuide" component={UserGuide} />
       </Stack.Navigator>
     </NavigationContainer>
   );

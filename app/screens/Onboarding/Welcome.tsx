@@ -2,6 +2,8 @@ import React from 'react';
 
 import {View, StatusBar, StyleSheet, Text, Image} from 'react-native';
 
+import {useNavigation} from '@react-navigation/native';
+
 import Container from './components/Container';
 import Button from 'components/Button';
 
@@ -12,6 +14,8 @@ import water_image from './assets/object_water.png';
 import sun_image from './assets/object_sun.png';
 
 export default function Onboarding() {
+  const navigation = useNavigation();
+
   return (
     <View>
       <StatusBar barStyle="dark-content" />
@@ -39,7 +43,9 @@ export default function Onboarding() {
           <PlantImgSVG />
         </View>
 
-        <Button>Get Started</Button>
+        <Button onPress={() => navigation.navigate('UserGuide')}>
+          Get Started
+        </Button>
 
         <View style={styles.policyTextContainer}>
           <Text style={styles.policyText}>
