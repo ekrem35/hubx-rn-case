@@ -92,7 +92,8 @@ const defaultContainerStyle = StyleSheet.create({
     position: 'absolute',
   },
   shadowImage: {
-    height: 60,
+    height: 50,
     position: 'absolute',
+    zIndex: 9,
   },
 });
