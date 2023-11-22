@@ -4,8 +4,8 @@
 
 import React from 'react';
 
-import Welcome from './app/screens/Onboarding/Welcome';
+import Router from './app/navigator/Router';
 
 export default function App() {
-  return <Welcome />;
+  return <Router />;
 }
