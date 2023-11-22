@@ -57,7 +57,9 @@ export default function Container(props: ContainerProps) {
       <ContainerBgSVG
         style={[defaultContainerStyle.containerBg, getBgTransformStyles()]}
       />
-      <ScrollView style={[defaultContainerStyle.content, props.contentStyle]}>
+      <ScrollView
+        contentContainerStyle={defaultContainerStyle.containerScroll}
+        style={[defaultContainerStyle.content, props.contentStyle]}>
         <View style={[defaultContainerStyle.childrenArea, props.style]}>
           {props?.children ?? null}
         </View>
@@ -96,4 +98,5 @@ const defaultContainerStyle = StyleSheet.create({
     position: 'absolute',
     zIndex: 9,
   },
+  containerScroll: {paddingBottom: 48},
 });
