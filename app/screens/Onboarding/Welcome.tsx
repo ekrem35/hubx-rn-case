@@ -9,6 +9,7 @@ import PlantImgSVG from './assets/plant_camera_line.image.svg';
 import spray_image from './assets/object_spray.png';
 import water_image from './assets/object_water.png';
 import sun_image from './assets/object_sun.png';
+import Button from 'components/Button';
 
 export default function Onboarding() {
   return (
@@ -37,6 +38,8 @@ export default function Onboarding() {
 
           <PlantImgSVG />
         </View>
+
+        <Button>Get Started</Button>
       </Container>
     </View>
   );
