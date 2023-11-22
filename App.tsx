@@ -4,8 +4,8 @@
 
 import React from 'react';
 
-import Onboarding from './app/screens/Onboarding';
+import Welcome from './app/screens/Onboarding/Welcome';
 
 export default function App() {
-  return <Onboarding />;
+  return <Welcome />;
 }
