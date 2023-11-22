@@ -3,6 +3,7 @@ import React, {useEffect, useState} from 'react';
 import {
   Dimensions,
   Image,
+  ScrollView,
   StyleProp,
   StyleSheet,
   View,
@@ -53,15 +54,14 @@ export default function Container(props: ContainerProps) {
 
   return (
     <View>
-      <View style={[defaultContainerStyle.content, props.style]}>
+      <ContainerBgSVG
+        style={[defaultContainerStyle.containerBg, getBgTransformStyles()]}
+      />
+      <ScrollView style={[defaultContainerStyle.content, props.style]}>
         <View style={[defaultContainerStyle.childrenArea, props.contentStyle]}>
           {props.children}
         </View>
-
-        <ContainerBgSVG
-          style={[defaultContainerStyle.containerBg, getBgTransformStyles()]}
-        />
-      </View>
+      </ScrollView>
 
       <Image
         source={shadowImage}
@@ -82,6 +82,7 @@ export default function Container(props: ContainerProps) {
 const defaultContainerStyle = StyleSheet.create({
   content: {
     padding: 24,
+    zIndex: 999,
   },
   childrenArea: {
     zIndex: 99,
