@@ -25,7 +25,9 @@ import ArtWorkSVG from './assets/art_work.svg';
 import spray_image from './assets/object_spray.png';
 import sun_image from './assets/object_sun.png';
 
-function FirstPage({onPressNext}: {onPressNext: () => void}) {
+type PageProps = {onPressNext: () => void};
+
+function FirstPage({onPressNext}: PageProps) {
   const [titleLayout, setTitleLayout] = useState<LayoutRectangle>({
     height: 0,
     width: 0,
@@ -78,7 +80,7 @@ function FirstPage({onPressNext}: {onPressNext: () => void}) {
   );
 }
 
-function SecondPage() {
+function SecondPage({onPressNext}: PageProps) {
   const [titleLayout, setTitleLayout] = useState<LayoutRectangle>({
     height: 0,
     width: 0,
@@ -113,38 +115,53 @@ function SecondPage() {
           <Image source={brushLongImg} />
         </View>
 
-        <View style={{alignItems: 'center', marginTop: 79}}>
+        <View
+          style={{
+            alignItems: 'center',
+            marginTop: 79,
+          }}>
           <View
             style={{
-              position: 'absolute',
-              top: -48,
-              right: 0,
+              width: 400,
               zIndex: 99,
             }}>
-            <Image
-              source={sun_image}
-              resizeMode="contain"
-              style={styles.sunImg}
-            />
-            <Image
-              source={spray_image}
-              resizeMode="contain"
-              style={styles.sprayImg}
-            />
-            <ArtWorkSVG />
+            <View
+              style={{
+                position: 'absolute',
+                top: -48,
+                right: 0,
+              }}>
+              <Image
+                source={sun_image}
+                resizeMode="contain"
+                style={styles.sunImg}
+              />
+              <Image
+                source={spray_image}
+                resizeMode="contain"
+                style={styles.sprayImg}
+              />
+              <ArtWorkSVG />
+            </View>
           </View>
           <FlatPhoneSVG />
         </View>
       </ScrollView>
 
       <View style={{padding: 24, paddingTop: 0, paddingBottom: 64}}>
-        <Button>Continue</Button>
+        <Button onPress={onPressNext}>Continue</Button>
       </View>
     </View>
   );
 }
 
-export default function UserGuide() {
+type Props = {
+  navigation: {
+    navigate: (route: string) => void;
+  };
+};
+
+export default function UserGuide({navigation}: Props) {
   const swiperRef = useRef<{scrollBy: (idx: number) => void}>(null);
 
   return (
@@ -162,9 +179,7 @@ export default function UserGuide() {
         <FirstPage
           onPressNext={() => swiperRef.current && swiperRef.current.scrollBy(1)}
         />
-        <SecondPage
-        // onPressNext={() => navigation.navigate('Plans')}
-        />
+        <SecondPage onPressNext={() => navigation.navigate('Plans')} />
       </Swiper>
     </Container>
   );
