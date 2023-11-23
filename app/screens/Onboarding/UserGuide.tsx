@@ -30,6 +30,7 @@ import spray_image from './assets/object_spray.png';
 import sun_image from './assets/object_sun.png';
 
 import colors from '../../lib/colors';
+import {INavigation} from '../../lib/types';
 
 type PageProps = {onPressNext: () => void};
 
@@ -162,9 +163,7 @@ function SecondPage({onPressNext}: PageProps) {
 }
 
 type Props = {
-  navigation: {
-    navigate: (route: string) => void;
-  };
+  navigation: INavigation;
 };
 
 export default function UserGuide({navigation}: Props) {

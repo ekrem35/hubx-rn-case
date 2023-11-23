@@ -21,14 +21,9 @@ import imageBg from './assets/images/Imagebackground.png';
 import CloseIconSVG from './assets/images/close.icon.svg';
 
 import colors from '../../lib/colors';
+import {INavigation} from '../../lib/types';
 
-export default function Plans({
-  navigation,
-}: {
-  navigation: {
-    navigate: (name: string) => void;
-  };
-}) {
+export default function Plans({navigation}: {navigation: INavigation}) {
   const navigateToHome = () => {
     navigation.navigate('HomeScreen');
   };
