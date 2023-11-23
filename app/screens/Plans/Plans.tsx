@@ -7,65 +7,22 @@ import {
   Text,
   ScrollView,
   StyleSheet,
+  TouchableOpacity,
 } from 'react-native';
 
 import LinearGradient from 'react-native-linear-gradient';
 
+import Button from 'components/Button';
+
+import PlanFeatureItem from './components/PlanFeatureItem';
+import PlanList from './components/PlanList';
+
 import imageBg from './assets/images/Imagebackground.png';
-
-import PlanLimitedIconSvg from './assets/images/plan.limited.icon.svg';
-
-function PlanDetailItem() {
-  return (
-    <View
-      style={{
-        width: 156,
-        height: 130,
-        borderRadius: 14,
-        backgroundColor: '#FFFFFF14',
-        padding: 16,
-      }}>
-      <PlanLimitedIconSvg />
-      <Text
-        style={{
-          fontFamily: 'Rubik',
-          fontStyle: 'normal',
-          fontWeight: '500',
-          fontSize: 20,
-          lineHeight: 24,
-          display: 'flex',
-          alignItems: 'center',
-          letterSpacing: 0.38,
-          color: '#FFFFFF',
-          marginTop: 16,
-        }}>
-        Unlimited
-      </Text>
-      <Text
-        style={{
-          fontFamily: 'Rubik',
-          fontStyle: 'normal',
-          fontWeight: '400',
-          fontSize: 13,
-          lineHeight: 18,
-          display: 'flex',
-          alignItems: 'center',
-          letterSpacing: -0.08,
-          color: 'rgba(255, 255, 255, 0.7)',
-          marginTop: 4,
-        }}>
-        Plant Identify
-      </Text>
-    </View>
-  );
-}
+import CloseIconSVG from './assets/images/close.icon.svg';
 
 export default function Plans() {
   return (
-    <View
-      style={{
-        flex: 1,
-      }}>
+    <View style={{flex: 1}}>
       <StatusBar barStyle="light-content" />
       <ImageBackground
         source={imageBg}
@@ -80,10 +37,16 @@ export default function Plans() {
             contentContainerStyle={{
               padding: 24,
             }}>
+            <TouchableOpacity
+              style={{
+                alignSelf: 'flex-end',
+                marginBottom: 160,
+              }}>
+              <CloseIconSVG />
+            </TouchableOpacity>
             <View
               style={{
                 flex: 1,
-                paddingTop: 260,
               }}>
               <View>
                 <Text style={styles.titleTxt}>
@@ -108,8 +71,39 @@ export default function Plans() {
                   marginTop: 20,
                   marginLeft: -24,
                 }}>
-                <PlanDetailItem />
+                <PlanFeatureItem />
+                <PlanFeatureItem style={{marginLeft: 8}} />
+                <PlanFeatureItem style={{marginLeft: 8}} />
               </ScrollView>
+
+              <PlanList style={{marginTop: 24}} />
+
+              <Button
+                style={{
+                  marginTop: 26,
+                }}>
+                Try free for 3 days
+              </Button>
+
+              <Text style={styles.subscriptionDesc}>
+                After the 3-day free trial period you’ll be charged ₺274.99 per
+                year unless you cancel before the trial expires. Yearly
+                Subscription is Auto-Renewable
+              </Text>
+
+              <View style={styles.termsAndCondsContainer}>
+                <TouchableOpacity>
+                  <Text style={styles.termsAndCondsText}> Terms</Text>
+                </TouchableOpacity>
+                <Text style={styles.termsAndCondsText}> • </Text>
+                <TouchableOpacity>
+                  <Text style={styles.termsAndCondsText}> Privacy</Text>
+                </TouchableOpacity>
+                <Text style={styles.termsAndCondsText}> • </Text>
+                <TouchableOpacity>
+                  <Text style={styles.termsAndCondsText}> Restore</Text>
+                </TouchableOpacity>
+              </View>
             </View>
           </ScrollView>
         </LinearGradient>
@@ -152,5 +146,30 @@ const styles = StyleSheet.create({
     lineHeight: 24,
     letterSpacing: 0.38,
     color: 'rgba(255, 255, 255, 0.7)',
+  },
+  subscriptionDesc: {
+    fontFamily: 'Rubik',
+    fontStyle: 'normal',
+    fontWeight: '300',
+    fontSize: 9,
+    lineHeight: 11.88,
+    textAlign: 'center',
+    color: 'rgba(255, 255, 255, 0.52)',
+    marginTop: 8,
+  },
+  termsAndCondsContainer: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 10,
+  },
+  termsAndCondsText: {
+    fontFamily: 'Rubik',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    fontSize: 11,
+    lineHeight: 13,
+    textAlign: 'center',
+    color: 'rgba(255, 255, 255, 0.5)',
   },
 });
