@@ -9,6 +9,8 @@ import {
   TextStyle,
 } from 'react-native';
 
+import colors from '../lib/colors';
+
 type Props = {
   children?: string;
   onPress?: () => void;
@@ -35,7 +37,7 @@ Button.defaultProps = {
 
 const defaultStyle = StyleSheet.create({
   touchable: {
-    backgroundColor: '#28AF6E',
+    backgroundColor: colors.green,
     padding: 16,
     borderRadius: 12,
   },
@@ -48,6 +50,6 @@ const defaultStyle = StyleSheet.create({
     alignItems: 'center',
     textAlign: 'center',
     letterSpacing: -0.24,
-    color: '#FFFFFF',
+    color: colors.white,
   },
 });

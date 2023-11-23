@@ -29,6 +29,8 @@ import ArtWorkSVG from './assets/art_work.svg';
 import spray_image from './assets/object_spray.png';
 import sun_image from './assets/object_sun.png';
 
+import colors from '../../lib/colors';
+
 type PageProps = {onPressNext: () => void};
 
 function FirstPage({onPressNext}: PageProps) {
@@ -200,9 +202,13 @@ const styles = StyleSheet.create({
     width: 10,
     height: 10,
     borderRadius: 10,
-    backgroundColor: '#13231B',
+    backgroundColor: colors.darkGreen,
   },
-  swiperActiveDotStyle: {width: 6, height: 6, backgroundColor: '#13231B40'},
+  swiperActiveDotStyle: {
+    width: 6,
+    height: 6,
+    backgroundColor: colors.darkGreen40,
+  },
   title: {
     gap: 8,
     fontFamily: 'Rubik',
@@ -211,7 +217,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     lineHeight: 33,
     letterSpacing: -1,
-    color: '#13231B',
+    color: colors.darkGreen,
     marginTop: 12,
   },
   slide: {
@@ -226,7 +232,7 @@ const styles = StyleSheet.create({
     width: Dimensions.get('screen').width,
   },
   text: {
-    color: '#fff',
+    color: colors.white,
     fontSize: 30,
     fontWeight: 'bold',
   },

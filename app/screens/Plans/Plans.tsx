@@ -20,6 +20,8 @@ import PlanList from './components/PlanList';
 import imageBg from './assets/images/Imagebackground.png';
 import CloseIconSVG from './assets/images/close.icon.svg';
 
+import colors from 'lib/colors';
+
 export default function Plans() {
   return (
     <View style={{flex: 1}}>
@@ -29,7 +31,7 @@ export default function Plans() {
         imageStyle={styles.imageBg}
         style={styles.bgImageStyle}>
         <LinearGradient
-          colors={['#101e17', '#101e17', '#101e1700']}
+          colors={[colors.greenBg, colors.greenBg, colors.greenBg00]}
           start={{x: 0, y: 1}}
           style={styles.gradientBg}
           end={{x: 0, y: 0}}>
@@ -136,7 +138,7 @@ const styles = StyleSheet.create({
     fontSize: 30,
     lineHeight: 47,
     textTransform: 'capitalize',
-    color: '#FFFFFF',
+    color: colors.white,
   },
   decriptionText: {
     fontFamily: 'Rubik',
@@ -145,7 +147,7 @@ const styles = StyleSheet.create({
     fontSize: 17,
     lineHeight: 24,
     letterSpacing: 0.38,
-    color: 'rgba(255, 255, 255, 0.7)',
+    color: colors.whiteb3,
   },
   subscriptionDesc: {
     fontFamily: 'Rubik',
@@ -154,7 +156,7 @@ const styles = StyleSheet.create({
     fontSize: 9,
     lineHeight: 11.88,
     textAlign: 'center',
-    color: 'rgba(255, 255, 255, 0.52)',
+    color: colors.white85,
     marginTop: 8,
   },
   termsAndCondsContainer: {
@@ -170,6 +172,6 @@ const styles = StyleSheet.create({
     fontSize: 11,
     lineHeight: 13,
     textAlign: 'center',
-    color: 'rgba(255, 255, 255, 0.5)',
+    color: colors.white80,
   },
 });

@@ -2,11 +2,13 @@ import React from 'react';
 
 import {View} from 'react-native';
 
+import colors from '../../../lib/colors';
+
 export default function LineShadow() {
   return (
     <View
       style={{
-        shadowColor: '#000',
+        shadowColor: colors.black,
         shadowOffset: {
           width: 0,
           height: 10,
@@ -17,7 +19,7 @@ export default function LineShadow() {
         height: 5,
         width: null,
         zIndex: 2,
-        backgroundColor: '#ffffff',
+        backgroundColor: colors.white,
       }}
     />
   );

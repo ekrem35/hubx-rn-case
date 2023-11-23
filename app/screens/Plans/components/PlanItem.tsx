@@ -15,6 +15,8 @@ import InactiveIconSvg from '../assets/images/inactive.plan.icon.svg';
 import ActiveIconSvg from '../assets/images/active.plan.icon.svg';
 import BadgeBgSvg from '../assets/images/badge.bg.svg';
 
+import colors from '../../../lib/colors';
+
 export default function PlanItem({
   title,
   description,
@@ -48,7 +50,9 @@ export default function PlanItem({
           }>
           <LinearGradient
             colors={
-              active ? ['#28AF6E00', '#28AF6E2B'] : ['#FFFFFF0D', '#FFFFFF0D']
+              active
+                ? [colors.green00, colors.green2b]
+                : [colors.white0d, colors.white0d]
             }
             start={{x: 0, y: 0}}
             style={styles.planItemGradient}
@@ -78,11 +82,11 @@ export default function PlanItem({
 const styles = StyleSheet.create({
   planItemContainer: {
     borderWidth: 0.5,
-    borderColor: '#FFFFFF4D',
+    borderColor: colors.white4d,
     borderRadius: 14,
   },
   activePlanItemContainer: {
-    borderColor: '#28AF6E',
+    borderColor: colors.green,
     borderWidth: 1.5,
     borderRadius: 14,
   },
@@ -97,7 +101,7 @@ const styles = StyleSheet.create({
     fontWeight: '500',
     fontSize: 16,
     lineHeight: 19,
-    color: '#FFFFFF',
+    color: colors.white,
   },
   planDescription: {
     fontFamily: 'Rubik',
@@ -105,7 +109,7 @@ const styles = StyleSheet.create({
     fontWeight: '300',
     fontSize: 12,
     lineHeight: 14,
-    color: 'rgba(255, 255, 255, 0.7)',
+    color: colors.whiteb3,
     marginTop: 1,
   },
   badgeTitle: {
@@ -115,7 +119,7 @@ const styles = StyleSheet.create({
     fontSize: 12,
     lineHeight: 18,
     alignItems: 'center',
-    color: '#FFFFFF',
+    color: colors.white,
     position: 'absolute',
     top: 4,
     right: 8,

@@ -6,6 +6,8 @@ import PlanLimitedIconSvg from '../assets/images/plan.limited.icon.svg';
 import PlanFasterIconSvg from '../assets/images/plan.feature.faster.svg';
 import PlanDetailedIconSvg from '../assets/images/plan.feature.details.svg';
 
+import colors from '../../../lib/colors';
+
 const mockFeatures = {
   unlimited: {
     title: 'Unlimited',
@@ -47,7 +49,7 @@ const styles = StyleSheet.create({
     width: 156,
     height: 130,
     borderRadius: 14,
-    backgroundColor: '#FFFFFF14',
+    backgroundColor: colors.white14,
     padding: 16,
   },
   title: {
@@ -59,7 +61,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     letterSpacing: 0.38,
-    color: '#FFFFFF',
+    color: colors.white,
     marginTop: 16,
   },
   description: {
@@ -71,7 +73,7 @@ const styles = StyleSheet.create({
     display: 'flex',
     alignItems: 'center',
     letterSpacing: -0.08,
-    color: 'rgba(255, 255, 255, 0.7)',
+    color: colors.whiteb3,
     marginTop: 4,
   },
 });

@@ -13,6 +13,8 @@ import spray_image from './assets/object_spray.png';
 import water_image from './assets/object_water.png';
 import sun_image from './assets/object_sun.png';
 
+import colors from '../../lib/colors';
+
 export default function Onboarding() {
   const navigation = useNavigation();
 
@@ -43,7 +45,7 @@ export default function Onboarding() {
           <PlantImgSVG />
         </View>
 
-        <Button onPress={() => navigation.navigate('UserGuide')}>
+        <Button onPress={() => navigation.navigate('UserGuide' as never)}>
           Get Started
         </Button>
 
@@ -75,7 +77,7 @@ const styles = StyleSheet.create({
     fontSize: 28,
     lineHeight: 33,
     letterSpacing: 0.07,
-    color: '#13231B',
+    color: colors.darkGreen,
   },
   titleBold: {
     fontWeight: '500',
@@ -87,7 +89,7 @@ const styles = StyleSheet.create({
     letterSpacing: 0.07,
     fontSize: 16,
     lineHeight: 22,
-    color: 'rgba(19, 35, 27, 0.7)',
+    color: colors.greenb3,
     marginTop: 8,
   },
   plantImgContainer: {
@@ -124,7 +126,7 @@ const styles = StyleSheet.create({
     lineHeight: 15,
     textAlign: 'center',
     letterSpacing: 0.07,
-    color: 'rgba(89, 113, 101, 0.7)',
+    color: colors.lightGreenb3,
     marginTop: 17,
     maxWidth: '75%',
   },
