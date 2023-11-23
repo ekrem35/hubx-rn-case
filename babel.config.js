@@ -8,6 +8,7 @@ module.exports = {
           components: './app/components',
           assets: ['./app/assets'],
           screens: ['./app/screens'],
+          state: ['./app/state'],
         },
       },
     ],
