@@ -20,9 +20,19 @@ import PlanList from './components/PlanList';
 import imageBg from './assets/images/Imagebackground.png';
 import CloseIconSVG from './assets/images/close.icon.svg';
 
-import colors from 'lib/colors';
+import colors from '../../lib/colors';
 
-export default function Plans() {
+export default function Plans({
+  navigation,
+}: {
+  navigation: {
+    navigate: (name: string) => void;
+  };
+}) {
+  const navigateToHome = () => {
+    navigation.navigate('HomeScreen');
+  };
+
   return (
     <View style={{flex: 1}}>
       <StatusBar barStyle="light-content" />
@@ -40,6 +50,7 @@ export default function Plans() {
               padding: 24,
             }}>
             <TouchableOpacity
+              onPress={navigateToHome}
               style={{
                 alignSelf: 'flex-end',
                 marginBottom: 160,
@@ -81,6 +92,7 @@ export default function Plans() {
               <PlanList style={{marginTop: 24}} />
 
               <Button
+                onPress={navigateToHome}
                 style={{
                   marginTop: 26,
                 }}>
