@@ -177,7 +177,7 @@ export default function UserGuide({navigation}: Props) {
   }
 
   return (
-    <Container contentStyle={{padding: 0}}>
+    <Container contentStyle={{padding: 0}} disableScroll>
       <Swiper
         ref={swiperRef as never}
         activeDotStyle={styles.swiperDotStyle}
