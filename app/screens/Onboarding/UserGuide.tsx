@@ -12,6 +12,10 @@ import {
 
 import Swiper from 'react-native-swiper';
 
+import {useAppDispatch} from '../../state/hooks';
+
+import {setHasUserSeenGuiding} from '../../state/slices/storage';
+
 import Container from './components/Container';
 import Button from 'components/Button';
 
@@ -162,15 +166,20 @@ type Props = {
 };
 
 export default function UserGuide({navigation}: Props) {
+  const dispatch = useAppDispatch();
+
   const swiperRef = useRef<{scrollBy: (idx: number) => void}>(null);
 
+  function onPressCloseGuiding() {
+    dispatch(setHasUserSeenGuiding(true));
+
+    navigation.navigate('Plans' as never);
+  }
+
   return (
-    <Container
-      contentStyle={{
-        padding: 0,
-      }}>
+    <Container contentStyle={{padding: 0}}>
       <Swiper
-        ref={swiperRef}
+        ref={swiperRef as never}
         activeDotStyle={styles.swiperDotStyle}
         dotStyle={styles.swiperActiveDotStyle}
         loop={false}
@@ -179,7 +188,7 @@ export default function UserGuide({navigation}: Props) {
         <FirstPage
           onPressNext={() => swiperRef.current && swiperRef.current.scrollBy(1)}
         />
-        <SecondPage onPressNext={() => navigation.navigate('Plans')} />
+        <SecondPage onPressNext={() => onPressCloseGuiding()} />
       </Swiper>
     </Container>
   );
