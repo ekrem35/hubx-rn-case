@@ -13,6 +13,7 @@ import LinearGradient from 'react-native-linear-gradient';
 
 import InactiveIconSvg from '../assets/images/inactive.plan.icon.svg';
 import ActiveIconSvg from '../assets/images/active.plan.icon.svg';
+import BadgeBgSvg from '../assets/images/badge.bg.svg';
 
 export default function PlanItem({
   title,
@@ -21,6 +22,7 @@ export default function PlanItem({
   active,
   value,
   style,
+  badgeTitle,
 }: {
   title: string;
   description: string;
@@ -28,9 +30,17 @@ export default function PlanItem({
   active: boolean;
   value: number;
   style?: StyleProp<ViewStyle>;
+  badgeTitle?: string;
 }) {
   return (
     <View style={style}>
+      {badgeTitle ? (
+        <View style={{position: 'absolute', right: 0, top: 0}}>
+          <BadgeBgSvg />
+          <Text style={styles.badgeTitle}>{badgeTitle}</Text>
+        </View>
+      ) : null}
+
       <TouchableOpacity onPress={() => onSelect(value)}>
         <View
           style={
@@ -97,5 +107,17 @@ const styles = StyleSheet.create({
     lineHeight: 14,
     color: 'rgba(255, 255, 255, 0.7)',
     marginTop: 1,
+  },
+  badgeTitle: {
+    fontFamily: 'Rubik',
+    fontStyle: 'normal',
+    fontWeight: '500',
+    fontSize: 12,
+    lineHeight: 18,
+    alignItems: 'center',
+    color: '#FFFFFF',
+    position: 'absolute',
+    top: 4,
+    right: 8,
   },
 });

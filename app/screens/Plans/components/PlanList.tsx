@@ -36,6 +36,7 @@ export default function PlanList({
         onSelect={idx => setSelectedPlanIndex(idx)}
         active={selectedPlanIndex === 1}
         value={1}
+        badgeTitle="Save 50%"
       />
     </View>
   );

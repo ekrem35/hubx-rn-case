@@ -71,9 +71,9 @@ export default function Plans() {
                   marginTop: 20,
                   marginLeft: -24,
                 }}>
-                <PlanFeatureItem />
-                <PlanFeatureItem style={{marginLeft: 8}} />
-                <PlanFeatureItem style={{marginLeft: 8}} />
+                <PlanFeatureItem name="unlimited" />
+                <PlanFeatureItem name="faster" style={{marginLeft: 8}} />
+                <PlanFeatureItem name="detailed" style={{marginLeft: 8}} />
               </ScrollView>
 
               <PlanList style={{marginTop: 24}} />
