@@ -1,6 +1,6 @@
 import {useEffect} from 'react';
 
-import {useNavigation} from '@react-navigation/native';
+import {CommonActions, useNavigation} from '@react-navigation/native';
 
 import {useAppSelector} from '../state/hooks';
 
@@ -12,9 +12,16 @@ export default function AuthScreen() {
   const navigation = useNavigation();
 
   useEffect(() => {
-    navigation.navigate(
-      (hasUserSeenGuiding ? 'HomeScreen' : 'WelcomeScreen') as never,
+    navigation.dispatch(
+      CommonActions.reset({
+        routes: [
+          {
+            name: hasUserSeenGuiding ? 'HomeScreen' : 'WelcomeScreen',
+          },
+        ],
+      }),
     );
+
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
