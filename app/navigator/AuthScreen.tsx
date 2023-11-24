@@ -16,7 +16,7 @@ export default function AuthScreen() {
       CommonActions.reset({
         routes: [
           {
-            name: hasUserSeenGuiding ? 'HomeScreen' : 'WelcomeScreen',
+            name: hasUserSeenGuiding ? 'TabNavigatior' : 'WelcomeScreen',
           },
         ],
       }),

@@ -6,14 +6,15 @@ import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
 const Stack = createNativeStackNavigator();
 
+import TabNavigator from './TabNavigator';
+
 import AuthScreen from './AuthScreen';
 
 import WelcomeScreen from '../screens/Onboarding/Welcome';
 import UserGuide from '../screens/Onboarding/UserGuide';
 import Plans from '../screens/Plans/Plans';
-import HomeScreen from '../screens/Home/HomeScreen';
 
-export default function TabNavigator() {
+export default function Router() {
   return (
     <NavigationContainer>
       <Stack.Navigator
@@ -26,7 +27,7 @@ export default function TabNavigator() {
         <Stack.Screen name="UserGuide" component={UserGuide} />
         <Stack.Screen name="Plans" component={Plans} />
         {/* Onboarding Screens End*/}
-        <Stack.Screen name="HomeScreen" component={HomeScreen} />
+        <Stack.Screen name="TabNavigatior" component={TabNavigator} />
       </Stack.Navigator>
     </NavigationContainer>
   );

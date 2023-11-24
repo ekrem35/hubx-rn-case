@@ -25,7 +25,7 @@ import {INavigation} from '../../lib/types';
 
 export default function Plans({navigation}: {navigation: INavigation}) {
   const navigateToHome = () => {
-    navigation.navigate('HomeScreen');
+    navigation.navigate('TabNavigatior');
   };
 
   return (
