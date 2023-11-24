@@ -103,7 +103,11 @@ const styles = StyleSheet.create({
   },
   sprayImg: {
     position: 'absolute',
-    left: 0,
+    left: 6,
+    top: 22,
+    width: 52,
+    height: 64,
+    zIndex: 999,
   },
   sunImg: {
     position: 'absolute',
