@@ -6,6 +6,7 @@ import {
   StyleSheet,
   ImageBackground,
   TouchableOpacity,
+  ScrollView,
 } from 'react-native';
 
 import colors from '../../lib/colors';
@@ -13,13 +14,16 @@ import colors from '../../lib/colors';
 import SearchInput from 'components/SearchInput';
 import GradientText from 'components/GradientText';
 
+import QuestionList from './components/QuestionList';
+
 import headerBgImg from './assets/header.bg.png';
 import NewNotificationSvg from './assets/new.notification.svg';
 import RightChevronSvg from './assets/right.chevron.svg';
+import CategoryList from './components/CategoryList';
 
 export default function HomeScreen() {
   return (
-    <View>
+    <ScrollView>
       <ImageBackground
         source={headerBgImg}
         resizeMode="cover"
@@ -36,16 +40,8 @@ export default function HomeScreen() {
         style={{
           padding: 24,
         }}>
-        <View
-          style={{
-            borderRadius: 12,
-            backgroundColor: '#24201A',
-            flexDirection: 'row',
-            justifyContent: 'space-between',
-            alignItems: 'center',
-            paddingHorizontal: 20,
-            paddingVertical: 15,
-          }}>
+        {/** premium box */}
+        <View style={styles.premiumBox}>
           <View
             style={{
               flexDirection: 'row',
@@ -63,14 +59,7 @@ export default function HomeScreen() {
                   start: {x: 1, y: 0},
                   end: {x: 0, y: 0},
                 }}
-                style={{
-                  fontFamily: 'Rubik',
-                  fontStyle: 'normal',
-                  fontWeight: '700',
-                  fontSize: 16,
-                  lineHeight: 21,
-                  letterSpacing: 0.32,
-                }}>
+                style={styles.premiumTitle}>
                 FREE Premium Available
               </GradientText>
 
@@ -80,14 +69,7 @@ export default function HomeScreen() {
                   start: {x: 1, y: 0},
                   end: {x: 0, y: 0},
                 }}
-                style={{
-                  fontFamily: 'Rubik',
-                  fontStyle: 'normal',
-                  fontWeight: '400',
-                  fontSize: 13,
-                  lineHeight: 16,
-                  marginTop: 1,
-                }}>
+                style={styles.premiumDescription}>
                 Tap to upgrade your account!
               </GradientText>
             </View>
@@ -96,8 +78,20 @@ export default function HomeScreen() {
             <RightChevronSvg />
           </TouchableOpacity>
         </View>
+        {/** premium box */}
+
+        <View
+          style={{
+            marginTop: 24,
+          }}>
+          <Text style={styles.title}>Get Started</Text>
+
+          <QuestionList />
+        </View>
+
+        <CategoryList />
       </View>
-    </View>
+    </ScrollView>
   );
 }
 
@@ -125,5 +119,38 @@ const styles = StyleSheet.create({
     letterSpacing: 0.35,
     color: colors.darkGreen,
     marginTop: 6,
+  },
+  premiumBox: {
+    borderRadius: 12,
+    backgroundColor: '#24201A',
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    paddingHorizontal: 20,
+    paddingVertical: 15,
+  },
+  premiumTitle: {
+    fontFamily: 'Rubik',
+    fontStyle: 'normal',
+    fontWeight: '700',
+    fontSize: 16,
+    lineHeight: 21,
+    letterSpacing: 0.32,
+  },
+  premiumDescription: {
+    fontFamily: 'Rubik',
+    fontStyle: 'normal',
+    fontWeight: '400',
+    fontSize: 13,
+    lineHeight: 16,
+    marginTop: 1,
+  },
+  title: {
+    fontFamily: 'Rubik-SemiBold',
+    fontStyle: 'normal',
+    fontSize: 15,
+    lineHeight: 20,
+    letterSpacing: -0.24,
+    color: colors.darkGreen,
   },
 });
