@@ -237,11 +237,11 @@ const styles = StyleSheet.create({
   },
   sprayImg: {
     position: 'absolute',
-    left: 0,
-    top: 0,
+    left: -60,
+    top: -10,
     zIndex: 99,
-    width: 48,
-    height: 48,
+    width: 148,
+    height: 148,
   },
   sunImg: {
     position: 'absolute',

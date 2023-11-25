@@ -35,7 +35,15 @@ export default function Onboarding() {
 
         <View style={styles.plantImgContainer}>
           <View style={styles.objectImagesContainer}>
-            <Image source={spray_image} style={styles.sprayImg} />
+            <Image
+              source={spray_image}
+              resizeMode="contain"
+              style={{
+                position: 'absolute',
+                left: -40,
+                zIndex: 999,
+              }}
+            />
 
             <Image source={sun_image} style={styles.sunImg} />
 
@@ -103,10 +111,7 @@ const styles = StyleSheet.create({
   },
   sprayImg: {
     position: 'absolute',
-    left: 6,
-    top: 22,
-    width: 52,
-    height: 64,
+    left: -40,
     zIndex: 999,
   },
   sunImg: {
