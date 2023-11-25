@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test my garden screen renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#013cFa50",
+      "flex": 1,
+    }
+  }
+/>
+`;

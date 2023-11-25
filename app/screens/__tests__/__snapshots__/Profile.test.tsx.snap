@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test profile screen renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#F13FFF50",
+      "flex": 1,
+    }
+  }
+/>
+`;

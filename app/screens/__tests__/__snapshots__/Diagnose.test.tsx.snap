@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#a139Ff50",
+      "flex": 1,
+    }
+  }
+/>
+`;
+
+exports[`test diagnose screen renders correctly 1`] = `
+<View
+  style={
+    {
+      "backgroundColor": "#a139Ff50",
+      "flex": 1,
+    }
+  }
+/>
+`;
