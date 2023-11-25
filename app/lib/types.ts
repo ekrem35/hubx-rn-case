@@ -20,9 +20,15 @@ export interface ICategory {
   title: string;
   image: {
     id: number;
-    name: Date;
-    url: 'https://cms-cdn.plantapp.app/6_edbcc6988a/6_edbcc6988a.png';
+    name: string;
+    url: string;
     createdAt: Date;
     updatedAt: Date;
   };
 }
+
+export interface ICategoryResponse {
+  data: ICategory[];
+}
+
+export type IQuestionResponse = IQuestion[];
