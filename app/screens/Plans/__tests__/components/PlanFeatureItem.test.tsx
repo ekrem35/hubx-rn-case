@@ -5,7 +5,7 @@ import {cleanup} from '@testing-library/react-native';
 
 import renderer from 'react-test-renderer';
 
-import PlanFeatureItem from '../PlanFeatureItem';
+import PlanFeatureItem from '../../components/PlanFeatureItem';
 
 afterEach(cleanup);
 

@@ -5,7 +5,7 @@ import {cleanup} from '@testing-library/react-native';
 
 import renderer from 'react-test-renderer';
 
-import PlanList from '../PlanList';
+import PlanList from '../../components/PlanList';
 
 afterEach(cleanup);
 

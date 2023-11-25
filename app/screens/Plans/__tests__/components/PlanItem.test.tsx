@@ -5,7 +5,7 @@ import {cleanup, fireEvent} from '@testing-library/react-native';
 
 import renderer from 'react-test-renderer';
 
-import PlanItem from '../PlanItem';
+import PlanItem from '../../components/PlanItem';
 
 afterEach(cleanup);
 
