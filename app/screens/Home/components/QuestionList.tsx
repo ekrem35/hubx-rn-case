@@ -21,9 +21,9 @@ export default function QuestionList() {
 
   async function getQuestions() {
     try {
-      const data = await questionApi.getAllQuestions();
+      const response = await questionApi.getAllQuestions();
 
-      setQuestions(data);
+      setQuestions(response.data);
     } catch (err) {
       Alert.alert("Couldn't fetch questions", (err as Error).message);
     }

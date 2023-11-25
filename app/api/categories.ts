@@ -1,14 +1,12 @@
 import axiosInstance from './axios';
 
-import {ICategory} from '../lib/types';
+import {ICategoryResponse} from '../lib/types';
 
 export async function getAllCategories() {
-  const response = await axiosInstance.get<{data: ICategory[]}>(
+  const response = await axiosInstance.get<ICategoryResponse>(
     '/getCategories',
-    {
-      method: 'get',
-    },
+    {method: 'get'},
   );
 
-  return response.data.data;
+  return response.data;
 }

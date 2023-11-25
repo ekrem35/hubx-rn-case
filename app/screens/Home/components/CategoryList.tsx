@@ -11,9 +11,9 @@ export default function CategoryList() {
 
   async function getCategories() {
     try {
-      const data = await categoriesApi.getAllCategories();
+      const response = await categoriesApi.getAllCategories();
 
-      setCategories(data);
+      setCategories(response.data);
     } catch (err) {
       Alert.alert("Couldn't fetch categories", (err as Error).message);
     }
