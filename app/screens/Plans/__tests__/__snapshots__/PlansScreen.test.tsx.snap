@@ -1,0 +1,913 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`test plans screen renders correctly 1`] = `
+<View
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    accessibilityIgnoresInvertColors={true}
+    style={
+      {
+        "flex": 1,
+        "position": "relative",
+      }
+    }
+  >
+    <Image
+      source={
+        {
+          "testUri": "../../../app/screens/Plans/assets/images/Imagebackground.png",
+        }
+      }
+      style={
+        [
+          {
+            "bottom": 0,
+            "left": 0,
+            "position": "absolute",
+            "right": 0,
+            "top": 0,
+          },
+          {
+            "height": undefined,
+            "width": undefined,
+          },
+          {
+            "bottom": "30%",
+            "position": "absolute",
+            "resizeMode": "cover",
+            "top": 0,
+          },
+        ]
+      }
+    />
+    <BVLinearGradient
+      colors={
+        [
+          4279246359,
+          4279246359,
+          1056279,
+        ]
+      }
+      endPoint={
+        {
+          "x": 0,
+          "y": 0,
+        }
+      }
+      locations={null}
+      startPoint={
+        {
+          "x": 0,
+          "y": 1,
+        }
+      }
+      style={
+        {
+          "height": "100%",
+          "position": "absolute",
+          "width": "100%",
+          "zIndex": 999,
+        }
+      }
+    >
+      <RCTScrollView
+        contentContainerStyle={
+          {
+            "padding": 24,
+          }
+        }
+      >
+        <View>
+          <View
+            accessibilityState={
+              {
+                "busy": undefined,
+                "checked": undefined,
+                "disabled": undefined,
+                "expanded": undefined,
+                "selected": undefined,
+              }
+            }
+            accessibilityValue={
+              {
+                "max": undefined,
+                "min": undefined,
+                "now": undefined,
+                "text": undefined,
+              }
+            }
+            accessible={true}
+            collapsable={false}
+            focusable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              {
+                "alignSelf": "flex-end",
+                "marginBottom": 160,
+                "opacity": 1,
+              }
+            }
+          >
+            <mockSvg />
+          </View>
+          <View
+            style={
+              {
+                "flex": 1,
+              }
+            }
+          >
+            <View>
+              <Text
+                style={
+                  {
+                    "color": "#FFFFFF",
+                    "fontFamily": "Rubik",
+                    "fontSize": 30,
+                    "fontStyle": "normal",
+                    "fontWeight": "300",
+                    "lineHeight": 47,
+                    "textTransform": "capitalize",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "fontWeight": "800",
+                    }
+                  }
+                >
+                  PlantApp
+                </Text>
+                 
+                Premium
+              </Text>
+              <Text
+                style={
+                  {
+                    "color": "#ffffffb3",
+                    "fontFamily": "Rubik",
+                    "fontSize": 17,
+                    "fontStyle": "normal",
+                    "fontWeight": "300",
+                    "letterSpacing": 0.38,
+                    "lineHeight": 24,
+                  }
+                }
+              >
+                Access All Features
+              </Text>
+            </View>
+            <RCTScrollView
+              contentContainerStyle={
+                {
+                  "paddingHorizontal": 24,
+                }
+              }
+              horizontal={true}
+              style={
+                {
+                  "marginLeft": -24,
+                  "marginTop": 20,
+                }
+              }
+            >
+              <View>
+                <View
+                  style={
+                    [
+                      {
+                        "backgroundColor": "#FFFFFF14",
+                        "borderRadius": 14,
+                        "height": 130,
+                        "padding": 16,
+                        "width": 156,
+                      },
+                      undefined,
+                    ]
+                  }
+                >
+                  <mockSvg />
+                  <Text
+                    style={
+                      {
+                        "alignItems": "center",
+                        "color": "#FFFFFF",
+                        "display": "flex",
+                        "fontFamily": "Rubik",
+                        "fontSize": 20,
+                        "fontStyle": "normal",
+                        "fontWeight": "500",
+                        "letterSpacing": 0.38,
+                        "lineHeight": 24,
+                        "marginTop": 16,
+                      }
+                    }
+                  >
+                    Unlimited
+                  </Text>
+                  <Text
+                    style={
+                      {
+                        "alignItems": "center",
+                        "color": "#ffffffb3",
+                        "display": "flex",
+                        "fontFamily": "Rubik",
+                        "fontSize": 13,
+                        "fontStyle": "normal",
+                        "fontWeight": "400",
+                        "letterSpacing": -0.08,
+                        "lineHeight": 18,
+                        "marginTop": 4,
+                      }
+                    }
+                  >
+                    Plant Identify
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "backgroundColor": "#FFFFFF14",
+                        "borderRadius": 14,
+                        "height": 130,
+                        "padding": 16,
+                        "width": 156,
+                      },
+                      {
+                        "marginLeft": 8,
+                      },
+                    ]
+                  }
+                >
+                  <mockSvg />
+                  <Text
+                    style={
+                      {
+                        "alignItems": "center",
+                        "color": "#FFFFFF",
+                        "display": "flex",
+                        "fontFamily": "Rubik",
+                        "fontSize": 20,
+                        "fontStyle": "normal",
+                        "fontWeight": "500",
+                        "letterSpacing": 0.38,
+                        "lineHeight": 24,
+                        "marginTop": 16,
+                      }
+                    }
+                  >
+                    Faster
+                  </Text>
+                  <Text
+                    style={
+                      {
+                        "alignItems": "center",
+                        "color": "#ffffffb3",
+                        "display": "flex",
+                        "fontFamily": "Rubik",
+                        "fontSize": 13,
+                        "fontStyle": "normal",
+                        "fontWeight": "400",
+                        "letterSpacing": -0.08,
+                        "lineHeight": 18,
+                        "marginTop": 4,
+                      }
+                    }
+                  >
+                    Process
+                  </Text>
+                </View>
+                <View
+                  style={
+                    [
+                      {
+                        "backgroundColor": "#FFFFFF14",
+                        "borderRadius": 14,
+                        "height": 130,
+                        "padding": 16,
+                        "width": 156,
+                      },
+                      {
+                        "marginLeft": 8,
+                      },
+                    ]
+                  }
+                >
+                  <mockSvg />
+                  <Text
+                    style={
+                      {
+                        "alignItems": "center",
+                        "color": "#FFFFFF",
+                        "display": "flex",
+                        "fontFamily": "Rubik",
+                        "fontSize": 20,
+                        "fontStyle": "normal",
+                        "fontWeight": "500",
+                        "letterSpacing": 0.38,
+                        "lineHeight": 24,
+                        "marginTop": 16,
+                      }
+                    }
+                  >
+                    Detailed
+                  </Text>
+                  <Text
+                    style={
+                      {
+                        "alignItems": "center",
+                        "color": "#ffffffb3",
+                        "display": "flex",
+                        "fontFamily": "Rubik",
+                        "fontSize": 13,
+                        "fontStyle": "normal",
+                        "fontWeight": "400",
+                        "letterSpacing": -0.08,
+                        "lineHeight": 18,
+                        "marginTop": 4,
+                      }
+                    }
+                  >
+                    Plant care
+                  </Text>
+                </View>
+              </View>
+            </RCTScrollView>
+            <View
+              style={
+                [
+                  {
+                    "marginTop": 24,
+                  },
+                ]
+              }
+            >
+              <View>
+                <View
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessibilityValue={
+                    {
+                      "max": undefined,
+                      "min": undefined,
+                      "now": undefined,
+                      "text": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "borderColor": "#FFFFFF4D",
+                        "borderRadius": 14,
+                        "borderWidth": 0.5,
+                      }
+                    }
+                  >
+                    <BVLinearGradient
+                      colors={
+                        [
+                          234881023,
+                          234881023,
+                        ]
+                      }
+                      endPoint={
+                        {
+                          "x": 1,
+                          "y": 0,
+                        }
+                      }
+                      locations={null}
+                      startPoint={
+                        {
+                          "x": 0,
+                          "y": 0,
+                        }
+                      }
+                      style={
+                        {
+                          "borderRadius": 14,
+                          "paddingHorizontal": 16,
+                          "paddingVertical": 13,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <mockSvg />
+                        <View
+                          style={
+                            {
+                              "marginLeft": 12,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#FFFFFF",
+                                "fontFamily": "Rubik",
+                                "fontSize": 16,
+                                "fontStyle": "normal",
+                                "fontWeight": "500",
+                                "lineHeight": 19,
+                              }
+                            }
+                          >
+                            1 Month
+                          </Text>
+                          <Text
+                            style={
+                              {
+                                "color": "#ffffffb3",
+                                "fontFamily": "Rubik",
+                                "fontSize": 12,
+                                "fontStyle": "normal",
+                                "fontWeight": "300",
+                                "lineHeight": 14,
+                                "marginTop": 1,
+                              }
+                            }
+                          >
+                            $2.99/month, auto renewable
+                          </Text>
+                        </View>
+                      </View>
+                    </BVLinearGradient>
+                  </View>
+                </View>
+              </View>
+              <View
+                style={
+                  {
+                    "marginTop": 16,
+                  }
+                }
+              >
+                <View
+                  style={
+                    {
+                      "position": "absolute",
+                      "right": 0,
+                      "top": 0,
+                    }
+                  }
+                >
+                  <mockSvg />
+                  <Text
+                    style={
+                      {
+                        "alignItems": "center",
+                        "color": "#FFFFFF",
+                        "fontFamily": "Rubik",
+                        "fontSize": 12,
+                        "fontStyle": "normal",
+                        "fontWeight": "500",
+                        "lineHeight": 18,
+                        "position": "absolute",
+                        "right": 8,
+                        "top": 4,
+                      }
+                    }
+                  >
+                    Save 50%
+                  </Text>
+                </View>
+                <View
+                  accessibilityState={
+                    {
+                      "busy": undefined,
+                      "checked": undefined,
+                      "disabled": undefined,
+                      "expanded": undefined,
+                      "selected": undefined,
+                    }
+                  }
+                  accessibilityValue={
+                    {
+                      "max": undefined,
+                      "min": undefined,
+                      "now": undefined,
+                      "text": undefined,
+                    }
+                  }
+                  accessible={true}
+                  collapsable={false}
+                  focusable={true}
+                  onClick={[Function]}
+                  onResponderGrant={[Function]}
+                  onResponderMove={[Function]}
+                  onResponderRelease={[Function]}
+                  onResponderTerminate={[Function]}
+                  onResponderTerminationRequest={[Function]}
+                  onStartShouldSetResponder={[Function]}
+                  style={
+                    {
+                      "opacity": 1,
+                    }
+                  }
+                >
+                  <View
+                    style={
+                      {
+                        "borderColor": "#28AF6E",
+                        "borderRadius": 14,
+                        "borderWidth": 1.5,
+                      }
+                    }
+                  >
+                    <BVLinearGradient
+                      colors={
+                        [
+                          2666350,
+                          724086638,
+                        ]
+                      }
+                      endPoint={
+                        {
+                          "x": 1,
+                          "y": 0,
+                        }
+                      }
+                      locations={null}
+                      startPoint={
+                        {
+                          "x": 0,
+                          "y": 0,
+                        }
+                      }
+                      style={
+                        {
+                          "borderRadius": 14,
+                          "paddingHorizontal": 16,
+                          "paddingVertical": 13,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          {
+                            "alignItems": "center",
+                            "flexDirection": "row",
+                          }
+                        }
+                      >
+                        <mockSvg />
+                        <View
+                          style={
+                            {
+                              "marginLeft": 12,
+                            }
+                          }
+                        >
+                          <Text
+                            style={
+                              {
+                                "color": "#FFFFFF",
+                                "fontFamily": "Rubik",
+                                "fontSize": 16,
+                                "fontStyle": "normal",
+                                "fontWeight": "500",
+                                "lineHeight": 19,
+                              }
+                            }
+                          >
+                            1 Year
+                          </Text>
+                          <Text
+                            style={
+                              {
+                                "color": "#ffffffb3",
+                                "fontFamily": "Rubik",
+                                "fontSize": 12,
+                                "fontStyle": "normal",
+                                "fontWeight": "300",
+                                "lineHeight": 14,
+                                "marginTop": 1,
+                              }
+                            }
+                          >
+                            First 3 days free, then $529,99/year
+                          </Text>
+                        </View>
+                      </View>
+                    </BVLinearGradient>
+                  </View>
+                </View>
+              </View>
+            </View>
+            <View
+              accessibilityState={
+                {
+                  "busy": undefined,
+                  "checked": undefined,
+                  "disabled": undefined,
+                  "expanded": undefined,
+                  "selected": undefined,
+                }
+              }
+              accessibilityValue={
+                {
+                  "max": undefined,
+                  "min": undefined,
+                  "now": undefined,
+                  "text": undefined,
+                }
+              }
+              accessible={true}
+              collapsable={false}
+              focusable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                {
+                  "backgroundColor": "#28AF6E",
+                  "borderRadius": 12,
+                  "marginTop": 26,
+                  "opacity": 1,
+                  "padding": 16,
+                }
+              }
+            >
+              <Text
+                style={
+                  [
+                    {
+                      "alignItems": "center",
+                      "color": "#FFFFFF",
+                      "display": "flex",
+                      "fontFamily": "Rubik",
+                      "fontSize": 15,
+                      "fontWeight": "700",
+                      "letterSpacing": -0.24,
+                      "lineHeight": 24,
+                      "textAlign": "center",
+                    },
+                    {},
+                  ]
+                }
+              >
+                Try free for 3 days
+              </Text>
+            </View>
+            <Text
+              style={
+                {
+                  "color": "#ffffff85",
+                  "fontFamily": "Rubik",
+                  "fontSize": 9,
+                  "fontStyle": "normal",
+                  "fontWeight": "300",
+                  "lineHeight": 11.88,
+                  "marginTop": 8,
+                  "textAlign": "center",
+                }
+              }
+            >
+              After the 3-day free trial period you’ll be charged ₺274.99 per year unless you cancel before the trial expires. Yearly Subscription is Auto-Renewable
+            </Text>
+            <View
+              style={
+                {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "center",
+                  "marginTop": 10,
+                }
+              }
+            >
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#ffffff80",
+                      "fontFamily": "Rubik",
+                      "fontSize": 11,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                      "lineHeight": 13,
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                   Terms
+                </Text>
+              </View>
+              <Text
+                style={
+                  {
+                    "color": "#ffffff80",
+                    "fontFamily": "Rubik",
+                    "fontSize": 11,
+                    "fontStyle": "normal",
+                    "fontWeight": "400",
+                    "lineHeight": 13,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                 • 
+              </Text>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#ffffff80",
+                      "fontFamily": "Rubik",
+                      "fontSize": 11,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                      "lineHeight": 13,
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                   Privacy
+                </Text>
+              </View>
+              <Text
+                style={
+                  {
+                    "color": "#ffffff80",
+                    "fontFamily": "Rubik",
+                    "fontSize": 11,
+                    "fontStyle": "normal",
+                    "fontWeight": "400",
+                    "lineHeight": 13,
+                    "textAlign": "center",
+                  }
+                }
+              >
+                 • 
+              </Text>
+              <View
+                accessibilityState={
+                  {
+                    "busy": undefined,
+                    "checked": undefined,
+                    "disabled": undefined,
+                    "expanded": undefined,
+                    "selected": undefined,
+                  }
+                }
+                accessibilityValue={
+                  {
+                    "max": undefined,
+                    "min": undefined,
+                    "now": undefined,
+                    "text": undefined,
+                  }
+                }
+                accessible={true}
+                collapsable={false}
+                focusable={false}
+                onClick={[Function]}
+                onResponderGrant={[Function]}
+                onResponderMove={[Function]}
+                onResponderRelease={[Function]}
+                onResponderTerminate={[Function]}
+                onResponderTerminationRequest={[Function]}
+                onStartShouldSetResponder={[Function]}
+                style={
+                  {
+                    "opacity": 1,
+                  }
+                }
+              >
+                <Text
+                  style={
+                    {
+                      "color": "#ffffff80",
+                      "fontFamily": "Rubik",
+                      "fontSize": 11,
+                      "fontStyle": "normal",
+                      "fontWeight": "400",
+                      "lineHeight": 13,
+                      "textAlign": "center",
+                    }
+                  }
+                >
+                   Restore
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+      </RCTScrollView>
+    </BVLinearGradient>
+  </View>
+</View>
+`;
