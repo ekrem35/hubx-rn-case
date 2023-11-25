@@ -1,23 +1,73 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`renders correctly 1`] = `
-<View
-  style={
-    {
-      "backgroundColor": "#a139Ff50",
-      "flex": 1,
-    }
-  }
-/>
-`;
-
 exports[`test diagnose screen renders correctly 1`] = `
-<View
+<RCTSafeAreaView
   style={
     {
       "backgroundColor": "#a139Ff50",
       "flex": 1,
+      "justifyContent": "flex-end",
+      "padding": 24,
     }
   }
-/>
+>
+  <View
+    accessibilityState={
+      {
+        "busy": undefined,
+        "checked": undefined,
+        "disabled": undefined,
+        "expanded": undefined,
+        "selected": undefined,
+      }
+    }
+    accessibilityValue={
+      {
+        "max": undefined,
+        "min": undefined,
+        "now": undefined,
+        "text": undefined,
+      }
+    }
+    accessible={true}
+    collapsable={false}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      {
+        "backgroundColor": "#28AF6E",
+        "borderRadius": 12,
+        "opacity": 1,
+        "padding": 16,
+      }
+    }
+  >
+    <Text
+      style={
+        [
+          {
+            "alignItems": "center",
+            "color": "#FFFFFF",
+            "display": "flex",
+            "fontFamily": "Rubik",
+            "fontSize": 15,
+            "fontWeight": "700",
+            "letterSpacing": -0.24,
+            "lineHeight": 24,
+            "textAlign": "center",
+          },
+          {},
+        ]
+      }
+    >
+      Go to onboarding
+    </Text>
+  </View>
+</RCTSafeAreaView>
 `;
