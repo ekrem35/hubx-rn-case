@@ -1,0 +1,400 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<RNCSafeAreaProvider
+  onInsetsChange={[Function]}
+  style={
+    {
+      "flex": 1,
+    }
+  }
+>
+  <RNSScreenStack
+    style={
+      {
+        "flex": 1,
+      }
+    }
+  >
+    <RNSScreen
+      collapsable={false}
+      gestureResponseDistance={
+        {
+          "bottom": -1,
+          "end": -1,
+          "start": -1,
+          "top": -1,
+        }
+      }
+      nativeBackButtonDismissalEnabled={false}
+      onAppear={[Function]}
+      onDisappear={[Function]}
+      onDismissed={[Function]}
+      onGestureCancel={[Function]}
+      onHeaderBackButtonClicked={[Function]}
+      onNativeDismissCancelled={[Function]}
+      onTransitionProgress={[Function]}
+      onWillDisappear={[Function]}
+      replaceAnimation="push"
+      sheetAllowedDetents="large"
+      sheetCornerRadius={-1}
+      sheetExpandsWhenScrolledToEdge={true}
+      sheetGrabberVisible={false}
+      sheetLargestUndimmedDetent="all"
+      stackPresentation="push"
+      style={
+        {
+          "bottom": 0,
+          "left": 0,
+          "position": "absolute",
+          "right": 0,
+          "top": 0,
+        }
+      }
+      swipeDirection="horizontal"
+    >
+      <View
+        accessibilityElementsHidden={false}
+        importantForAccessibility="auto"
+        style={
+          {
+            "flex": 1,
+            "flexDirection": "column-reverse",
+          }
+        }
+      >
+        <View
+          collapsable={false}
+          style={
+            [
+              {
+                "flex": 1,
+              },
+              {
+                "backgroundColor": "rgb(242, 242, 242)",
+              },
+              undefined,
+            ]
+          }
+        >
+          <View>
+            <View>
+              <mockSvg
+                style={
+                  [
+                    {
+                      "position": "absolute",
+                      "zIndex": 1,
+                    },
+                    {
+                      "right": 0,
+                      "top": 0,
+                      "transform": [
+                        {
+                          "rotate": "0deg",
+                        },
+                      ],
+                    },
+                  ]
+                }
+              />
+              <RCTScrollView
+                contentContainerStyle={
+                  [
+                    {
+                      "paddingBottom": 48,
+                    },
+                    undefined,
+                  ]
+                }
+                scrollEnabled={true}
+                style={
+                  [
+                    {
+                      "padding": 24,
+                      "zIndex": 999,
+                    },
+                    undefined,
+                  ]
+                }
+              >
+                <View>
+                  <View
+                    style={
+                      [
+                        {
+                          "zIndex": 99,
+                        },
+                        undefined,
+                      ]
+                    }
+                  >
+                    <View
+                      style={
+                        {
+                          "marginTop": 12,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#13231B",
+                            "fontFamily": "Rubik",
+                            "fontSize": 28,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "letterSpacing": 0.07,
+                            "lineHeight": 33,
+                          }
+                        }
+                      >
+                        Welcome to 
+                        <Text
+                          style={
+                            {
+                              "fontWeight": "500",
+                            }
+                          }
+                        >
+                          PlantApp
+                        </Text>
+                      </Text>
+                      <Text
+                        style={
+                          {
+                            "color": "#13231bb3",
+                            "fontFamily": "Rubik",
+                            "fontSize": 16,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "letterSpacing": 0.07,
+                            "lineHeight": 22,
+                            "marginTop": 8,
+                          }
+                        }
+                      >
+                        Identify more than 3000+ plants and 88% accuracy.
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "alignItems": "center",
+                          "marginTop": 24,
+                        }
+                      }
+                    >
+                      <View
+                        style={
+                          {
+                            "height": 400,
+                            "position": "absolute",
+                            "width": 300,
+                          }
+                        }
+                      >
+                        <Image
+                          source={
+                            {
+                              "testUri": "../../../app/screens/Onboarding/assets/object_spray.png",
+                            }
+                          }
+                          style={
+                            {
+                              "height": 64,
+                              "left": 6,
+                              "position": "absolute",
+                              "top": 22,
+                              "width": 52,
+                              "zIndex": 999,
+                            }
+                          }
+                        />
+                        <Image
+                          source={
+                            {
+                              "testUri": "../../../app/screens/Onboarding/assets/object_sun.png",
+                            }
+                          }
+                          style={
+                            {
+                              "position": "absolute",
+                              "right": 30,
+                              "top": 40,
+                            }
+                          }
+                        />
+                        <Image
+                          source={
+                            {
+                              "testUri": "../../../app/screens/Onboarding/assets/object_water.png",
+                            }
+                          }
+                          style={
+                            {
+                              "bottom": 20,
+                              "position": "absolute",
+                              "right": 70,
+                            }
+                          }
+                        />
+                      </View>
+                      <mockSvg />
+                    </View>
+                    <View
+                      accessibilityState={
+                        {
+                          "busy": undefined,
+                          "checked": undefined,
+                          "disabled": undefined,
+                          "expanded": undefined,
+                          "selected": undefined,
+                        }
+                      }
+                      accessibilityValue={
+                        {
+                          "max": undefined,
+                          "min": undefined,
+                          "now": undefined,
+                          "text": undefined,
+                        }
+                      }
+                      accessible={true}
+                      collapsable={false}
+                      focusable={true}
+                      onClick={[Function]}
+                      onResponderGrant={[Function]}
+                      onResponderMove={[Function]}
+                      onResponderRelease={[Function]}
+                      onResponderTerminate={[Function]}
+                      onResponderTerminationRequest={[Function]}
+                      onStartShouldSetResponder={[Function]}
+                      style={
+                        {
+                          "backgroundColor": "#28AF6E",
+                          "borderRadius": 12,
+                          "opacity": 1,
+                          "padding": 16,
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          [
+                            {
+                              "alignItems": "center",
+                              "color": "#FFFFFF",
+                              "display": "flex",
+                              "fontFamily": "Rubik",
+                              "fontSize": 15,
+                              "fontWeight": "700",
+                              "letterSpacing": -0.24,
+                              "lineHeight": 24,
+                              "textAlign": "center",
+                            },
+                            {},
+                          ]
+                        }
+                      >
+                        Get Started
+                      </Text>
+                    </View>
+                    <View
+                      style={
+                        {
+                          "alignItems": "center",
+                        }
+                      }
+                    >
+                      <Text
+                        style={
+                          {
+                            "color": "#597165b3",
+                            "fontFamily": "Rubik",
+                            "fontSize": 11,
+                            "fontStyle": "normal",
+                            "fontWeight": "400",
+                            "letterSpacing": 0.07,
+                            "lineHeight": 15,
+                            "marginTop": 17,
+                            "maxWidth": "75%",
+                            "textAlign": "center",
+                          }
+                        }
+                      >
+                        By tapping next, you are agreeing to PlantID
+                         
+                        <Text
+                          onPress={[Function]}
+                          style={
+                            {
+                              "textDecorationLine": "underline",
+                            }
+                          }
+                        >
+                          Terms of Use
+                        </Text>
+                         
+                        &
+                         
+                        <Text
+                          onPress={[Function]}
+                          style={
+                            {
+                              "textDecorationLine": "underline",
+                            }
+                          }
+                        >
+                          Privacy Policy.
+                        </Text>
+                      </Text>
+                    </View>
+                  </View>
+                </View>
+              </RCTScrollView>
+              <Image
+                height={50}
+                resizeMode="cover"
+                source={
+                  {
+                    "testUri": "../../../app/screens/Onboarding/assets/shadow.png",
+                  }
+                }
+                style={
+                  [
+                    {
+                      "height": 50,
+                      "position": "absolute",
+                      "zIndex": 9,
+                    },
+                    {
+                      "top": 889.3333333333334,
+                      "width": 750,
+                    },
+                  ]
+                }
+              />
+            </View>
+          </View>
+        </View>
+      </View>
+      <RNSScreenStackHeaderConfig
+        backButtonInCustomView={false}
+        backTitleVisible={true}
+        backgroundColor="rgb(255, 255, 255)"
+        color="rgb(0, 122, 255)"
+        direction="ltr"
+        disableBackButtonMenu={false}
+        hidden={true}
+        hideBackButton={false}
+        largeTitleHideShadow={false}
+        title="WelcomeScreen"
+        titleColor="rgb(28, 28, 30)"
+        topInsetEnabled={false}
+        translucent={false}
+      />
+    </RNSScreen>
+  </RNSScreenStack>
+</RNCSafeAreaProvider>
+`;
