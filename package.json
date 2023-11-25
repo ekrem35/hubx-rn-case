@@ -7,7 +7,7 @@
     "ios": "react-native run-ios",
     "lint": "eslint .",
     "start": "react-native start",
-    "test": "jest",
+    "test": "jest app/api/__test__/questions.test.ts",
     "test:coverage": "jest --coverage",
     "test:watch": "jest --watch"
   },
